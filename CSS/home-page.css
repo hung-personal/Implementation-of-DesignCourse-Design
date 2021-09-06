@@ -1,0 +1,17 @@
+.portrait-card-alignment-custom {
+  top: -3vw;
+}
+
+.rounded-card-custom {
+  border-radius: 10% !important;
+}
+
+@media (min-width: 768px) {
+  .w-md-35 {
+    width: 35% !important;
+  }
+
+  .h-md-auto {
+    height: auto !important;
+  }
+}

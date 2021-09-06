@@ -1,0 +1,72 @@
+:root {
+  --change-page-animation-time: 1.5s;
+  --hover-img-animation-time: 0.5s;
+}
+
+.cropped-custom {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hover-img-container-custom {
+  position: relative;
+}
+
+.hover-img-custom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  padding: inherit;
+  top: 0;
+  left: 0;
+  background-color: var(--primary-background);
+  background-clip: content-box;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  transition: var(--hover-img-animation-time) ease;
+}
+
+.hover-img-custom:hover {
+  opacity: 0.6;
+}
+
+.animate {
+  transition: opacity var(--change-page-animation-time) ease;
+}
+
+.inactive {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  width: 100vw;
+}
+
+.animate-img {
+  object-fit: cover;
+  animation: img-grow var(--change-page-animation-time) ease 1 forwards;
+}
+
+@keyframes img-grow {
+  0% {
+    opacity: 1;
+    width: 0%;
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .h-md-10 {
+    height: 10% !important;
+  }
+
+  .h-md-90 {
+    height: 90% !important;
+  }
+}

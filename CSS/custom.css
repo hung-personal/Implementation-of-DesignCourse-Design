@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;800&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-text: #0078e7;
+  --light-text: #ffffff;
+  --primary-background: #0078e7;
+  --secondary-background: #ffffff;
+  --secondary-border: #ffffff;
+  --light-background: #e5e5e5;
+  --light-border: #e5e5e5;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  height: 100vh;
+  background-image: url("../Images/greek-vase.png");
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: var(--primary-text);
+}
+
+.web-title a:hover {
+  color: inherit;
+}
+
+.h-10 {
+  height: 10%;
+}
+
+.h-30 {
+  height: 30%;
+}
+
+.h-40 {
+  height: 40%;
+}
+
+.h-55 {
+  height: 55%;
+}
+
+.h-60 {
+  height: 60%;
+}
+
+.h-90 {
+  height: 90%;
+}
+
+.w-15 {
+  width: 15%;
+}
+
+.w-35 {
+  width: 35%;
+}
+
+.w-65 {
+  width: 65%;
+}
+
+.ps-7 {
+  padding-left: 7%;
+}
+
+.px-12 {
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+.mx-25 {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.ms-25 {
+  margin-left: 25%;
+}
+
+.me-25 {
+  margin-right: 25%;
+}
+
+.bg-primary-custom {
+  background-color: var(--primary-background);
+}
+
+.bg-secondary-custom {
+  background-color: var(--secondary-background);
+}
+
+.bg-light-custom {
+  background-color: var(--light-background);
+}
+
+.btn-primary-custom {
+  background-color: var(--primary-background);
+  border-color: var(--primary-background);
+}
+
+.btn-secondary-custom {
+  background-color: var(--secondary-background);
+  border-color: var(--secondary-background);
+}
+
+.text-primary-custom {
+  color: var(--primary-text);
+}
+
+.text-light-custom {
+  color: var(--light-text);
+}
+
+.border-light-custom {
+  border-color: var(--light-border);
+}
+
+.border-secondary-custom {
+  border-color: var(--secondary-border);
+}
+
+.fs-7 {
+  font-size: 0.75rem;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.underline-stylized-custom {
+  position: relative;
+}
+
+.underline-stylized-custom::after {
+  content: "";
+  position: absolute;
+  bottom: -2.9rem;
+  left: -0.5rem;
+  height: 57px;
+  width: 120%;
+  border: 0.4rem solid;
+  border-color: var(--primary-background) transparent transparent transparent;
+  border-radius: 100%;
+  transform: rotate(-10deg);
+  /* background-color: var(--light-background); */
+}
+
+.modal-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.modal-custom {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: fit-content;
+  z-index: 100;
+}
+
+.btn-close-modal {
+  background: none;
+  border: none;
+}
+
+.hidden {
+  display: none;
+}

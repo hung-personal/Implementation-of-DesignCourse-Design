@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+  <link rel="stylesheet" href="./CSS/custom.css" />
+  <link rel="stylesheet" href="./CSS/home-page.css" />
+  <link rel="stylesheet" href="./CSS/back-button.css" />
+
+  <title>Document</title>
+</head>
+
+<body>
+  <a class="back-button-container" href="https://hung-personal.github.io/projects/">
+    <button class="back-button">Back to projects</button>
+  </a>
+
+
+  <div class="container-fluid h-100">
+    <div class="row h-10">
+      <nav class="row col-md-8 col-xl-6 align-items-center p-0">
+        <div class="col-md-2 col-xl-3"></div>
+        <div
+          class="col-md-4 col-xl-3 d-flex justify-content-center justify-content-md-start text-primary-custom h5 web-title">
+          <strong><a href="./">DesignCourse</a></strong>
+        </div>
+        <div class="row col-md-6 col-xl-6">
+          <div class="col-md-4 col-xl-4 p-0 text-center"><a href="./">Home</a></div>
+          <div class="col-md-4 col-xl-4 p-0 text-center"><a href="./work/">Our work</a></div>
+          <div class="col-md-4 col-xl-4 p-0 text-center"><a href="#Not-implemented"
+              class="not-implemented-link">Services</a>
+          </div>
+        </div>
+      </nav>
+      <div class="d-none d-md-flex col-md-4 col-xl-6 align-items-center justify-content-end">
+        <form action="#Not-implemented" class="not-implemented-link">
+          <button class="btn btn-secondary-custom text-primary-custom rounded-pill shadow-sm">
+            <strong>Get a Quote</strong>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="row h-50">
+      <div class="row col-6 col-md-6 col-xl-6">
+        <div class="col-md-3 col-xl-3"></div>
+        <div class="d-flex flex-column col-md-9 col-xl-9  align-items-start justify-content-center">
+          <p class="text-uppercase text-decoration-underline m-0" style="color: #7b7b7b; letter-spacing: 0.15rem;">Award
+            Winning Design</p>
+          <h1 class="fw-800"><strong> We make your <br>business look <br> <span
+                class="underline-stylized-custom">great</span></strong>
+          </h1>
+          <a href="./work/">
+            <button class="btn btn-primary-custom rounded-pill text-light-custom mt-5">
+              <img src="./Images/magnify.svg" alt="Magnifying Glass">
+              Our work
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="d-flex col-6 col-md-6 col-xl-6 align-items-center">
+        <img class="img-fluid w-65" src="./Images/storefront_illustration.svg" alt="storefront_illustration">
+      </div>
+    </div>
+
+    <div class="row h-40 position-relative">
+      <div class="d-flex align-items-center justify-content-center col-md-6 col-xl-6 bg-light-custom">
+
+        <div class="card-group w-75 gap-4">
+          <div class="card align-items-center shadow-sm rounded-card-custom pt-4">
+            <img src="./Images/jon-snow.jpg" alt="Jon Snow"
+              class="card-img-top rounded-circle  position-absolute h-40 w-auto h-md-auto w-md-35 portrait-card-alignment-custom">
+            <div class="card-body text-center">
+              <h6 class="card-title text-primary-custom">Jon Snow</h6>
+              <p class="card-text fs-7">Didn't want to be king. So became web developer.</p>
+            </div>
+          </div>
+          <div class="card align-items-center shadow-sm rounded-card-custom pt-4">
+            <img src="./Images/daenerys-targaryen.jpg" alt="Daenerys Targaryen"
+              class="card-img-top rounded-circle position-absolute h-40 w-auto h-md-auto w-md-35 portrait-card-alignment-custom">
+            <div class="card-body text-center">
+              <h6 class="card-title text-primary-custom">Daenerys Targaryen</h6>
+              <p class="card-text fs-7">Heir to the Iron Throne, Queen of the Andals... You know the rest. Now also web
+                developer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img class="d-none d-md-block position-absolute w-15 top-50 start-50 translate-middle" src="./Images/ring.svg"
+        alt="black toroid">
+      <div
+        class="d-flex col-md-6 col-xl-6 bg-primary-custom text-light-custom align-items-center justify-content-center">
+        <p class="w-65">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere tempora quisquam
+          ducimus
+          temporibus quasi doloribus cum ipsam eum perferendis, asperiores minima? Tempora suscipit natus fugit, nisi
+          impedit distinctio, esse facilis temporibus, provident architecto aperiam! Impedit neque repellat rem delectus
+          adipisci!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay hidden">
+  </div>
+  <div class="bg-secondary-custom modal modal-custom top-50 start-50 translate-middle rounded p-2 hidden">
+    <button class="btn-close-modal align-self-end fs-3">✖</button>
+    <h1 class="flex-grow-1">Page not part of project</h1>
+  </div>
+
+  <script src="./modal.js"></script>
+</body>
+
+</html>
